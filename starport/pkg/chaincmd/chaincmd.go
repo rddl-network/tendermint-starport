@@ -520,6 +520,8 @@ func (c ChainCmd) BankSendCommand(fromAddress, toAddress, amount string) step.Op
 		amount,
 		optionBroadcastMode,
 		constSync,
+		"--fees",
+		"1plmnt",
 		optionYes,
 	)
 

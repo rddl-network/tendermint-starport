@@ -112,7 +112,7 @@ func New(ctx context.Context, ccr chaincmdrunner.Runner, options ...Option) (Fau
 		runner:      ccr,
 		accountName: DefaultAccountName,
 		coinsMax:    make(map[string]uint64),
-		openAPIData: openAPIData{"Blockchain", "http://localhost:1317"},
+		openAPIData: openAPIData{"Blockchain", "https://testnet-api.rddl.io"},
 	}
 
 	for _, apply := range options {
